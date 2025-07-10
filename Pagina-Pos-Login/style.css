@@ -1,20 +1,25 @@
 .lado-lado{
        display: inline-block;  /* Coloca os botões lado a lado */
-            padding: 10px 20px;     /* Espaçamento interno do botão */
+            padding: 10px 15px;     /* Espaçamento interno do botão */
             margin: 10px;           /* Espaçamento entre os botões */
-            background-color: #151616;  /* Cor de fundo */
-            color: white;           /* Cor do texto */
+            background-color: #0c0c0cd8;  /* Cor de fundo */
+            color: rgb(250, 248, 248);           /* Cor do texto */
             border: none;           /* Remove a borda padrão do botão */
             border-radius: 5px;     /* Bordas arredondadas */
             font-size: 16px;        /* Tamanho da fonte */
             cursor: pointer;       /* Cursor de mãozinha */
             transition: background-color 0.3s; /* Transição suave para o hover */
-}
+            border:  2x solid black;   
+            
+        }
 
 h1{
-    padding-left: 250px;
-    color: black;
-    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+    text-align: center;
+    margin: 20px;
+    background-position: center center;
+    color: rgb(0, 0, 0);
+     
 
 }
 
@@ -25,4 +30,23 @@ body{
             background-attachment: fixed; /* Imagem fixa, ou seja, não se move ao rolar a página */
             margin: 0;
             height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+}
+
+.roda-pe{
+        position: relative;
+        cursor: pointer;
+
+}
+
+.localizacao{
+            text-align: center;
+            color: #000000;
+            cursor: pointer;
+
+}
+
+.closeouopen{
+        text-align: center;
+        cursor: pointer;
+
 }
