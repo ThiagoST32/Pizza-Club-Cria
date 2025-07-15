@@ -1,3 +1,7 @@
+*{
+        font-family: Arial, Helvetica, sans-serif;
+
+}
 .lado-lado{
        display: inline-block;  /* Coloca os botões lado a lado */
             padding: 10px 15px;     /* Espaçamento interno do botão */
@@ -25,23 +29,31 @@ h1{
 
 body{
     background-image: url('https://img.freepik.com/vetores-gratis/fatia-voadora-de-ilustracao-em-…os-vetor-isolado-conceito-de-fast-food-estilo-flat-cartoon_138676-1934.jpg'); /* URL da imagem */
-            background-size: cover; /* Faz a imagem cobrir toda a tela */
-            background-position: center center; /* Centraliza a imagem na tela */
-            background-attachment: fixed; /* Imagem fixa, ou seja, não se move ao rolar a página */
-            margin: 0;
-            height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+        background-size: cover; /* Faz a imagem cobrir toda a tela */
+        background-position: center center; /* Centraliza a imagem na tela */
+        background-attachment: fixed; /* Imagem fixa, ou seja, não se move ao rolar a página */
+        margin: 0;
+        height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
 }
 
 .roda-pe{
-        position: relative;
+        transform:  translateX(-920%);
+        transform-origin: top right;
+        display: inline-block;
+        border: 1px solid black;
+        position: fixed;
+        top: 0;
+        right: 0;
         cursor: pointer;
+
+       
 
 }
 
 .localizacao{
-            text-align: center;
-            color: #000000;
-            cursor: pointer;
+        text-align: center;
+        color: #000000;
+        cursor: pointer;
 
 }
 
@@ -49,4 +61,25 @@ body{
         text-align: center;
         cursor: pointer;
 
+}
+
+.valores{
+        display: inline-block;  
+            padding: 10px 15px;     
+            margin: 10px;           
+            background-color: #0c0c0cd8;  
+            color: rgb(250, 248, 248);           
+            border: none;           
+            border-radius: 5px;     
+            font-size: 16px;        
+            transition: background-color 0.3s; 
+            border:  2x solid black;   
+            
+
+}
+
+.AreaDosPedidos{
+        background-color: lightblue; 
+        padding: 1000px;
+        opacity: 0.5;
 }
