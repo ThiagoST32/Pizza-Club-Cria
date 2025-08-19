@@ -37,16 +37,25 @@ h1 {
     margin: 20px;
     color: rgb(0, 0, 0);
     cursor: pointer;
+    display: inline-block;
+
 }
 
-.localizacao,
+
 .closeouopen {
+    position: absolute;
     text-align: center;
     cursor: pointer;
+    display: inline-block;
+     top: 50%;
+    left: 50%;
+        
 }
 
 .localizacao {
-    color: #b11616;
+   background-color: #0c0c0cd8;
+    color: rgb(230, 222, 222);
+    border: 2px solid black;
 }
 
 .lado-lado {
@@ -79,13 +88,15 @@ h1 {
 }
 
 .roda-pe {
-    position: fixed;
+    
+    position: fixed;   /* ou absolute, depende se quer seguir a rolagem */
+    left: 20px;
     top: 20px;
-    right: 50px;
     border: 1px solid black;
-    padding: 10px 15px;
+    padding: 5px 15px;
     background-color: #0c0c0cd8;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+
 }
