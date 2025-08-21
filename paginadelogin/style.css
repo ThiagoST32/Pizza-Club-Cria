@@ -15,47 +15,51 @@ body {
 }
 
 
-.Texto1,.localizacao,
-.closeouopen{
-    text-align: center; 
-    justify-content:center ;
-    padding: 15px 10px;
-    margin: 10px;
-    background-color: #0c0c0cd8;
-    color: rgb(230, 222, 222);
-    border: 2px solid black;
-    border-radius: 5px;
-    font-size: 16px;
+.Texto1{
+    margin: 20px;
+    background: none;
+    color: rgb(2, 2, 2);
+    font-size: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
-
-}
-
-
-h1 {
-    text-align: center;
-    margin: 20px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
+    padding: 10px 20px; /* Espaçamento interno */
     display: inline-block;
-
+    left: 760px;
+    position: relative;
+    bottom: 50px
 }
 
 
 .closeouopen {
-    position: absolute;
-    text-align: center;
+    justify-content:center ;
+    padding: 15px 10px;
+    margin: 60px;
+    display: inline-block; /* Faz o h2 só ocupar o tamanho do conteúdo */
+    background: none;
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: off; /* Borda preta */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 20px;
     cursor: pointer;
-    display: inline-block;
-     top: 50%;
-    left: 50%;
-        
+    position: relative;
+    left: 70px;
+
 }
 
 .localizacao {
-   background-color: #0c0c0cd8;
-    color: rgb(230, 222, 222);
-    border: 2px solid black;
+   display: inline-block; /* Faz o h2 só ocupar o tamanho do conteúdo */
+  background: none; /* Fundo escuro com transparência */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 20px;
+  left: 430px;
+  top: 55px;
+  cursor: pointer;
+  position: relative;
+  display: center;
+
 }
 
 .lado-lado {
@@ -64,16 +68,10 @@ h1 {
     margin: 10px;
     background-color: #0c0c0cd8;
     color: rgb(230, 222, 222);
-    border: 2px solid black;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
-}
-
-.lado-lado:hover {
-    background-color: #1f1f1f;
 }
 
 .AreaDosPedidos {
@@ -88,15 +86,19 @@ h1 {
 }
 
 .roda-pe {
-    
-    position: fixed;   /* ou absolute, depende se quer seguir a rolagem */
-    left: 20px;
-    top: 20px;
-    border: 1px solid black;
-    padding: 5px 15px;
-    background-color: #0c0c0cd8;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
 
+  display: inline-block; /* Ocupa só o tamanho do conteúdo */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor ao passar por cima */
+  position: relative; /* Necessário para posicionar o menu dropdown */
+  margin: 10px;
+  left: 20px;
+  z-index: 1000;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  
 }
+
